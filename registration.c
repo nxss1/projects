@@ -46,7 +46,7 @@ void gerar_senha(int comprimento, int incluir_maiusculas, int incluir_minusculas
     }
     senha[comprimento] = '\0'; // Adiciona o caractere nulo ao final da senha
 
-    printf("Sua senha gerada é: %s\n", senha);
+    printf("Sua senha gerada e: %s\n", senha);
 }
 
 int main() {
@@ -58,13 +58,13 @@ int main() {
     // Solicita as opções do usuário
     printf("Digite o comprimento da senha desejada: ");
     scanf("%d", &comprimento);
-    printf("Incluir letras maiúsculas? (1 para sim, 0 para não): ");
+    printf("Incluir letras maiusculas? (1 para sim, 0 para nao): ");
     scanf("%d", &incluir_maiusculas);
-    printf("Incluir letras minúsculas? (1 para sim, 0 para não): ");
+    printf("Incluir letras minusculas? (1 para sim, 0 para nao): ");
     scanf("%d", &incluir_minusculas);
-    printf("Incluir números? (1 para sim, 0 para não): ");
+    printf("Incluir numeros? (1 para sim, 0 para nao): ");
     scanf("%d", &incluir_numeros);
-    printf("Incluir caracteres especiais? (1 para sim, 0 para não): ");
+    printf("Incluir caracteres especiais? (1 para sim, 0 para nao): ");
     scanf("%d", &incluir_especiais);
 
     // Gera a senha com base nas opções do usuário
